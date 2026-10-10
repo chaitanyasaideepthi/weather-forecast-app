@@ -1,0 +1,56 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eaf4ff;
+  color: #0f4c81;
+}
+
+.home-page {
+  min-height: 100vh;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  max-width: 550px;
+  margin: 25px auto;
+}
+
+.search-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #b7cfe8;
+  border-radius: 8px;
+  background: white;
+  color: #222;
+  font-size: 16px;
+}
+
+.search-form button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #1976d2;
+  color: white;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #c62828;
+}
+
+@media (max-width: 480px) {
+  .search-form {
+    flex-direction: column;
+  }
+}
+
